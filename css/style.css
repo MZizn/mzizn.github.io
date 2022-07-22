@@ -185,6 +185,32 @@ ul#nav2 li {
 }
 
 
+/* page-link */
+
+#page-link{
+  display: flex;
+  justify-content: left;
+  padding: 2px;
+}
+
+#page-link li{
+  list-style: none;
+}
+
+#page-link li a{
+  color: #333;
+  padding:0 10px;
+  text-decoration: none;
+}
+
+#page-link li a::before{
+  content:'▼';
+  font-size:0.8rem;
+  padding:0 10px 0 0;
+  color: #ccc;
+}
+
+
 /* footer */
 
 footer {
