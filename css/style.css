@@ -394,8 +394,9 @@ li ul {
 }
 
 ol {
-	margin: 5px 15px 5px 50px;
-	padding: 0;
+	/*margin: 5px 15px 5px 50px;
+	padding: 0;*/
+	padding-left: 20px;
 }
 
 ol li {
