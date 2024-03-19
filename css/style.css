@@ -394,8 +394,9 @@ li ul {
 }
 
 ol {
-	margin: 5px 15px 5px 20px;
+	margin: 5px 15px 5px 30px;
 	padding: 0;
+	list-style-type: decimal;
 }
 
 ol li {
