@@ -394,7 +394,7 @@ li ul {
 }
 
 ol {
-	margin: 5px 15px 5px 50px;
+	margin: 5px 15px 5px 20px;
 	padding: 0;
 }
 
@@ -583,14 +583,14 @@ figcaption {
 
 .ptitle {
 	font-weight: bold;
-	margin-left: 20pt;
+	margin-left: 2pt;
 	font-size: 11pt;
 	width: 720px;
 	color: black;
 }
 
 .pinfo {
-	margin-left: 20pt;
+	margin-left: 10pt;
 	font-size: 9pt;
 	width: 720px;
 }
