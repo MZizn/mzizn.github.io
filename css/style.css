@@ -584,6 +584,7 @@ figcaption {
 
 .ptitle {
 	font-weight: bold;
+	margin-top: 5pt;
 	margin-left: 2pt;
 	font-size: 11pt;
 	width: 720px;
