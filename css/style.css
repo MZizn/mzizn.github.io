@@ -609,7 +609,7 @@ figcaption {
 }
 
 hr {
-	border: 1px dotted #666666;
+	border: 1px solid #666666;
 	margin: 15px 15px;
 	clear: both;
 }
