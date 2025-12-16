@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Website of Masamichi Zaizen</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+<div id="container">
+  <header id="header">
+    <h1>Website of Masamichi Zaizen</h1>
+  </header>
+  <div id="nav_frame">
+    <nav>
+      <ul id="nav1">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="research.html">研究内容</a></li>
+        <li><a href="publications.html">研究業績</a></li>
+        <li><a href="presentations.html">講演</a></li>
+        <li><a href="note.html">ノート</a></li>
+        <li><a href="GPU_global.html">ENGLISH</a></li>
+      </ul>
+    </nav>
+    <div id="link">
+      <p>LINKS</p>
+      <ul id="nav2">
+        <li><a href="https://researchmap.jp/mzizn">researchmap</a></li>
+        <li><a href="https://orcid.org/0000-0001-7305-1683">ORCID</a></li>
+        <li><a href="https://github.com/MZizn?tab=repositories">Github: MZizn</a></li>
+        <hr>
+        <li><a href="https://ea.c.u-tokyo.ac.jp/home/">東京大学 駒場宇宙地球グループ</a></li>
+        <li>- <a href="https://sites.google.com/g.ecc.u-tokyo.ac.jp/nulc">nuLCコラボレーション</a></li>
+        <li><a href="https://www.heap.phys.waseda.ac.jp/">早稲田大学 山田研究室</a></li>
+        <li><a href="http://www.astron.s.u-tokyo.ac.jp/">東京大学 天文学専攻</a></li>
+        <li>- <a href="http://tron.astron.s.u-tokyo.ac.jp/~umeda/">梅田研究室</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--<div id="top"><img src="image/top8.jpg" alt="" width="750" height="300"></div>-->
+  <div id="main">
+    <div id="about">
+      <h2 class="mt0">GPU加速</h2>
+
+      内側50kmから外側100kmに向けて、電子型のニュートリノが伝搬していく系で生じる集団振動の様子。
+      １次元球対称な系として、GPU上で高速フレーバー変換のグローバル計算を行った。
+      <video controls width="600" height="600">
+        <source src="./movie/FFC_global/num_frac_movie.mp4"/>
+        <figcaption class="video-caption">
+          横軸：動径方向、縦軸：運動量空間角度方向、カラーバー：非電子型の割合
+        </figcaption>
+      </video>
+
+      <video controls width="600" height="600">
+        <source src="./movie/FFC_global/num_ratio_movie.mp4"/>
+        <figcaption class="video-caption">
+          横軸：動径方向、縦軸：電子型の割合 (下の青側が電子型、上の赤側が非電子型)
+        </figcaption>
+      </video>
+
+    </div>
+  </div>
+</div>
+<footer>
+  <div id="footer_color">
+    <div id="copy">Copyright &copy; Masamichi Zaizen All rights reserved.</div>
+    <!--この行は削除できません--><div id="flink"><a href="https://www.cis-trans.jp/">研究室ホームページ</a></div><!--この行は削除できません-->
+  </div>
+</footer>
+</body>
+</html>
