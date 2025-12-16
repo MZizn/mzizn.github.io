@@ -30,11 +30,9 @@ summary {
 audio,
 canvas,
 video {
-    display: block;
-    /*display: inline-block;*/
-    /*vertical-align: top;   /* または middle */*/
-    /**display: inline;*/
-    /**zoom: 1;*/
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 
 /**
