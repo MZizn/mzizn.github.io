@@ -10,10 +10,13 @@
 <link href="css/style.css" rel="stylesheet" media="all">
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <div id="container">
+
   <header id="header">
     <h1>Website of Masamichi Zaizen</h1>
   </header>
+
   <div id="nav_frame">
     <nav>
       <ul id="nav1">
@@ -41,35 +44,40 @@
       </ul>
     </div>
   </div>
+
   <!--<div id="top"><img src="image/top8.jpg" alt="" width="750" height="300"></div>-->
   <div id="main">
     <div id="about">
-      <h2 class="mt0">GPU加速</h2>
+      <h2 class="mt0">GPU加速によるフレーバー進化計算</h2>
 
-      内側50kmから外側100kmに向けて、電子型のニュートリノが伝搬していく系で生じる集団振動の様子。
-      １次元球対称な系として、GPU上で高速フレーバー変換のグローバル計算を行った。
-      <video controls width="600" height="600">
+      電子型のニュートリノが内側の放出領域から外側へと伝搬していく過程で生じるフレーバー変換のアニメーション。 <br>
+      １次元球対称な系として内側50kmから外側100kmまで、GPU上で高速フレーバー変換のグローバル計算を行った。
+      <video controls width="450" height="450">
         <source src="./movie/FFC_global/num_frac_movie.mp4"/>
-        <figcaption class="video-caption">
-          横軸：動径方向、縦軸：運動量空間角度方向、カラーバー：非電子型の割合
-        </figcaption>
       </video>
+      <figcaption class="video-caption">
+        横軸：動径方向、縦軸：運動量空間角度方向、カラーバー：非電子型フレーバーの割合 <br>
+        破線と点線は、内側境界で \( \cos\theta_\nu = 0.5 \) と \( \cos\theta_\nu = 0 \) の方向に向いていたニュートリノの軌跡であり、徐々に前方集中していることを表している。
+      </figcaption>
 
-      <video controls width="600" height="600">
+      <video controls width="450" height="450">
         <source src="./movie/FFC_global/num_ratio_movie.mp4"/>
-        <figcaption class="video-caption">
-          横軸：動径方向、縦軸：電子型の割合 (下の青側が電子型、上の赤側が非電子型)
-        </figcaption>
       </video>
+      <figcaption class="video-caption">
+        横軸：動径方向、縦軸：電子型の割合 (下側の青色が電子型、上側の赤色が非電子型フレーバー) <br>
+        上のmovieに対して、縦軸の運動量空間を積分した量に対応している。
+      </figcaption>
 
     </div>
   </div>
+
+  <footer>
+    <div id="footer_color">
+      <div id="copy">Copyright &copy; Masamichi Zaizen All rights reserved.</div>
+      <!--この行は削除できません--><div id="flink"><a href="https://www.cis-trans.jp/">研究室ホームページ</a></div><!--この行は削除できません-->
+    </div>
+  </footer>
+
 </div>
-<footer>
-  <div id="footer_color">
-    <div id="copy">Copyright &copy; Masamichi Zaizen All rights reserved.</div>
-    <!--この行は削除できません--><div id="flink"><a href="https://www.cis-trans.jp/">研究室ホームページ</a></div><!--この行は削除できません-->
-  </div>
-</footer>
 </body>
 </html>

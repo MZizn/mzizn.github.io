@@ -214,7 +214,7 @@ ul#nav2 li {
 /* footer */
 
 footer {
-	width: auto;
+	width: 960px;
 	height: 56px;
 	margin: 0 auto;
 	padding: 0 auto;
@@ -500,7 +500,7 @@ video{
   	margin: 0 auto;   /* 中央寄せ */
 }
 
-figcaption {
+figcaption{
     /* キャプションのスタイル設定 */
     background-color: #f2f2f2; /* 背景色 */
     padding: 10px; /* 余白 */
