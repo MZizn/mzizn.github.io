@@ -495,8 +495,9 @@ figcaption {
 	padding: 0 5px;
 }
 
-video {
-    display: block;
+video{
+  	display: block;
+  	margin: 0 auto;   /* 中央寄せ */
 }
 
 
