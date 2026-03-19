@@ -515,37 +515,51 @@ figcaption{
 .profile-area {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
 }
 
 .profile-table {
   border-collapse: collapse;
+  margin: 0;
+  max-width: 620px;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 4px 8px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .profile-table th {
-  padding: 6px 10px;
-  text-align: left;
-  vertical-align: top;
   white-space: nowrap;
 }
 
 .profile-table td {
-  padding: 6px 10px;
-  text-align: left;
-  vertical-align: top;
   white-space: normal;
 }
 
 .profile-photo {
-  flex-shrink: 0;
+  flex: 0 0 auto;
 }
 
 .profile-photo img {
-  width: 120px;
+  width: 90px;
+  max-width: 90px;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 6px;
+}
+
+.affil-medium {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.indent {
+  display: inline-block;
 }
 
 .mb0 {
