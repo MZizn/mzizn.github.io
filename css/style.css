@@ -512,6 +512,27 @@ figcaption{
 
 /* utility */
 
+.profile-table {
+  border-collapse: collapse;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+.profile-photo {
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.profile-photo img {
+  border-radius: 8px;
+  max-width: 160px;
+  height: auto;
+}
+
 .mb0 {
 	margin-bottom: 0;
 }
