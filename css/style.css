@@ -512,25 +512,40 @@ figcaption{
 
 /* utility */
 
+.profile-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+
 .profile-table {
   border-collapse: collapse;
 }
 
-.profile-table th,
+.profile-table th {
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
 .profile-table td {
-  padding: 8px 12px;
-  vertical-align: middle;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
 }
 
 .profile-photo {
-  padding-left: 20px;
-  vertical-align: top;
+  flex-shrink: 0;
 }
 
 .profile-photo img {
-  border-radius: 8px;
-  max-width: 100px;
+  width: 120px;
   height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .mb0 {
