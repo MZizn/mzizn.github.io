@@ -510,6 +510,37 @@ figcaption{
     border-top: none; /* 上のボーダーは動画と繋がるように削除 */
 }
 
+.movie-pair {
+	margin: 10px 20px 25px;
+}
+
+.movie-pair-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.movie-pair-row video {
+	width: 345px;
+	height: auto;
+	display: block;
+	margin: 0;
+}
+
+.movie-pair figcaption {
+	margin-top: 0;
+	font-size: 0.85em;
+	line-height: 1.4;
+	padding: 10px;
+	background-color: #f2f2f2;
+	color: #333;
+	border: 1px solid #ddd;
+	border-top: none;
+	font-style: italic;
+}
+
 /* utility */
 
 .profile-area {

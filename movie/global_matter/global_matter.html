@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Website of Masamichi Zaizen</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<div id="container">
+
+  <header id="header">
+    <h1>Website of Masamichi Zaizen</h1>
+  </header>
+
+  <div id="nav_frame">
+    <nav>
+      <ul id="nav1">
+        <li><a href="index-e.html">HOME</a></li>
+        <li><a href="cv-e.html">CV</a></li>
+        <li><a href="research-e.html">RESEARCH</a></li>
+        <li><a href="publications-e.html">PUBLICATION</a></li>
+        <li><a href="presentations-e.html">PRESENTATION</a></li>
+        <li><a href="note-e.html">NOTE</a></li>
+        <li><a href="cv.html">JAPANESE</a></li>
+      </ul>
+    </nav>
+    <div id="link">
+      <p>LINKS</p>
+      <ul id="nav2">
+        <li><a href="https://researchmap.jp/mzizn?lang=en">researchmap</a></li>
+        <li><a href="https://orcid.org/0000-0001-7305-1683">ORCID</a></li>
+        <li><a href="https://github.com/MZizn?tab=repositories">Github: MZizn</a></li>
+        <li><a href="https://github.com/MZizn/private_page/blob/master/README.md">private</a></li>
+        <hr>
+        <li><a href="https://ea.c.u-tokyo.ac.jp/home/en/">Department of Earth Science and Astronomy, UTokyo</a></li>
+        <li>- <a href="https://sites.google.com/g.ecc.u-tokyo.ac.jp/nulc">nuLC Collaboration</a></li>
+        <li><a href="https://www.heap.phys.waseda.ac.jp/index.php">Yamada Lab, Waseda University</a></li>
+        <li><a href="http://www.astron.s.u-tokyo.ac.jp/en/">Department of Astronomy, University of Tokyo</a></li>
+        <li>- <a href="https://umeda-utokyo.github.io/">Umeda Lab</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--<div id="top"><img src="image/top8.jpg" alt="" width="750" height="300"></div>-->
+
+  <!--<div id="top"><img src="image/top8.jpg" alt="" width="750" height="300"></div>-->
+  <div id="main">
+    <div id="about">
+      <h2 class="mt0">Movie for Fig.2 of "Fast Neutrino-Flavor Conversion with Attenuation and Global Lepton Gradient"</h2>
+
+      These animations show the time evolution of the transition probability and flavor coherence in the two models displayed in Fig.2.
+      They illustrate the development of significant flavor conversion in the flat matter profile case and its suppression in the steep gradient case.
+
+
+      <h3>Model: \( (\lambda_0/\mu_0, m) = (1, 0) \) with \( \xi = 10^{-4} \)</h3>
+      <figure class="movie-pair">
+        <div class="movie-pair-row">
+          <video controls>
+            <source src="./xi1e4/L1m0_trans.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="./xi1e4/L1m0_coherence.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <figcaption>
+          <b>Left:</b> Transition probability <b>Right:</b> Flavor coherence<br>
+          x: Radius, y: Angular direction<br>
+        </figcaption>
+      </figure>
+
+
+      <h3>Model: \( (\lambda_0/\mu_0, m) = (1, -3) \) with \( \xi = 10^{-4} \)</h3>
+      <figure class="movie-pair">
+        <div class="movie-pair-row">
+          <video controls>
+            <source src="./xi1e4/L1m3_trans.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="./xi1e4/L1m3_coherence.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <figcaption>
+          <b>Left:</b> Transition probability <b>Right:</b> Flavor coherence<br>
+          x: Radius, y: Angular direction<br>
+        </figcaption>
+      </figure>
+
+
+      <h3>Model: \( (\lambda_0/\mu_0, m) = (20, -3) \) with \( \xi = 10^{-2} \)</h3>
+      <figure class="movie-pair">
+        <div class="movie-pair-row">
+          <video controls>
+            <source src="./xi1e2/L20m3_trans.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="./xi1e2/L20m3_coherence.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <figcaption>
+          <b>Left:</b> Transition probability <b>Right:</b> Flavor coherence<br>
+          x: Radius, y: Angular direction<br>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_color">
+      <div id="copy">Copyright &copy; Masamichi Zaizen All rights reserved.</div>
+      <!--この行は削除できません--><div id="flink"><a href="https://www.cis-trans.jp/">研究室ホームページ</a></div><!--この行は削除できません-->
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
