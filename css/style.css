@@ -340,7 +340,7 @@ footer {
 	box-sizing: border-box;
 }
 
-#main  h1 {
+/*#main  h1 {
 	width: 725px;
 	height: 24px;
 	margin: 0 0 15px;
@@ -350,6 +350,18 @@ footer {
 	font-size: 24px;
 	font-weight: bold;
 	background-color: #000;
+}*/
+#main h1 {
+	width: 100%;
+	height: auto;
+	margin: 0 0 15px;
+	padding: 24px 25px 20px 25px;
+	color: #FFF;
+	line-height: 1.4;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #000;
+	box-sizing: border-box;
 }
 
 /*
@@ -368,13 +380,13 @@ h2 {
 */
 
 h2 {
-	width: auto;
+	width: 100%;
 	height: auto;
 	font-size: 22px;
 	font-weight: bold;
 	margin: 30px 0 10px;
 	padding: 13px 25px 7px 25px;
-	line-height: 22px;
+	line-height: 1.4;
 	color: #FFF;
 	background-color: #999;
 	clear: both;
@@ -562,7 +574,7 @@ figcaption{
 
 .movie-pair-row {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 20px;
 	flex-wrap: wrap;
