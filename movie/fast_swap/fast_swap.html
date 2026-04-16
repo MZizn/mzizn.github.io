@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Movie | Website of Masamichi Zaizen</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<link href="/css/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<div id="container">
+
+  <header id="header">
+    <h1>Website of Masamichi Zaizen</h1>
+  </header>
+
+  <div id="nav_frame">
+    <nav>
+      <ul id="nav1">
+        <li><a href="/index-e.html">HOME</a></li>
+        <li><a href="/cv-e.html">CV</a></li>
+        <li><a href="/research-e.html">RESEARCH</a></li>
+        <li><a href="/publications-e.html">PUBLICATION</a></li>
+        <li><a href="/presentations-e.html">PRESENTATION</a></li>
+        <li><a href="/note-e.html">NOTE</a></li>
+        <li><a href="/movie/fast_swap/fast_swap.html">JAPANESE</a></li>
+      </ul>
+    </nav>
+    <div id="link">
+      <p>LINKS</p>
+      <ul id="nav2">
+        <li><a href="https://researchmap.jp/mzizn?lang=en">researchmap</a></li>
+        <li><a href="https://orcid.org/0000-0001-7305-1683">ORCID</a></li>
+        <li><a href="https://github.com/MZizn?tab=repositories">Github: MZizn</a></li>
+        <li><a href="https://github.com/MZizn/private_page/blob/master/README.md">private</a></li>
+        <hr>
+        <li><a href="https://ea.c.u-tokyo.ac.jp/home/en/">Department of Earth Science and Astronomy, UTokyo</a></li>
+        <li>- <a href="https://sites.google.com/g.ecc.u-tokyo.ac.jp/nulc">nuLC Collaboration</a></li>
+        <li><a href="https://www.heap.phys.waseda.ac.jp/index.php">Yamada Lab, Waseda University</a></li>
+        <li><a href="http://www.astron.s.u-tokyo.ac.jp/en/">Department of Astronomy, University of Tokyo</a></li>
+        <li>- <a href="https://umeda-utokyo.github.io/">Umeda Lab</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="about">
+      <h1>"Fast neutrino-flavor swap in high-energy astrophysical environments"</h1>
+      <h2 class="mt0">
+        Masamichi Zaizen and Hiroki Nagakura<br>
+        <a href="https://arxiv.org/abs/2311.13842">
+          arXiv:2311.13842
+        </a>
+      </h2>
+
+      These animations show the time evolution of survival probability in a colliding neutrino beam model in Fig.1 and 2.
+      They illustrate that neutrinos undergo a complete flavor swap \( P_{ee} = 0 \) after their colliding (creating ELN crossing) at the center of the domain.
+      Also, the EXZS (ELN-XLN Zero Surface), where neutrinos stay at a flavor equipartition \( P_{ee} = 0.5 \), moves toward the positive \(z\)-direction in the case of \( \alpha \neq 1 \) with time.
+
+
+      <h3>Animation of Fig.1</h3>
+      <figure class="movie-pair">
+        <div class="movie-pair-row">
+          <video controls>
+            <source src="./alpha1_movie.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="./alpha05_movie.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <figcaption>
+          <b>Left:</b> Flavor asymmetry \( \alpha = 1.0 \) <b>Right:</b> \( \alpha = 0.5 \) <br>
+          <b>Horizontal:</b> Spatial domain <b> <b>Vertical:</b> Survival probability <b>
+          Red color corresponds to electron neutrinos going to the right direction, while blue corresponds to the anti-partners going to the left.
+        </figcaption>
+      </figure>
+
+
+      <h3>Animation of Fig.2</h3>
+      <figure class="movie-pair">
+        <div class="movie-pair-row">
+          <video controls>
+            <source src="./scale_movie_alpha1.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="./scale_movie_alpha05.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <figcaption>
+          <b>Left:</b> Flavor asymmetry \( \alpha = 1.0 \) <b>Right:</b> \( \alpha = 0.5 \) <br>
+          <b>Top:</b> Real space \( z \) <b>Bottom:</b> Spatial domain \( \lambda \) scaled by the interval between the leading parts of injected neutrinos <br>
+          In the scaled domain, the location of EXZS is stationary. 
+          Note that after the leading parts escape the box, the visualization fails to capture the whole structures because the EXZS get out of the box.
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_color">
+      <div id="copy">Copyright &copy; Masamichi Zaizen All rights reserved.</div>
+      <!--この行は削除できません--><div id="flink"><a href="https://www.cis-trans.jp/">研究室ホームページ</a></div><!--この行は削除できません-->
+    </div>
+  </footer>
+  
+</div>
+</body>
+</html>
