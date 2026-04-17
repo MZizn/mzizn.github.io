@@ -599,7 +599,6 @@ figcaption{
 	font-style: italic;
 }
 
-<style>
 .chart-scroll {
   width: 100%;
   overflow-x: auto;
@@ -611,7 +610,6 @@ figcaption{
   min-width: 1200px; /* チャートが崩れない幅に合わせる */
   display: block;
 }
-</style>
 
 /* utility */
 
