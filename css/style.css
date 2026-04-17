@@ -599,14 +599,19 @@ figcaption{
 	font-style: italic;
 }
 
-iframe {
-    overflow-clip-margin: content-box !important;
-    overflow: clip !important;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
+<style>
+.chart-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
+
+.chart-scroll iframe {
+  min-width: 1200px; /* チャートが崩れない幅に合わせる */
+  display: block;
+}
+</style>
 
 /* utility */
 
