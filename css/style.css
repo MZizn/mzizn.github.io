@@ -786,3 +786,50 @@ blockquote {
 blockquote p {
 	text-indent: 0;
 }
+
+
+
+
+dl{
+	width: 100%;
+}
+dt{
+  float: left;
+  padding: 10px 5px;
+}
+dd{
+  margin-left: 200px;
+  padding: 10px 5px;
+}
+.btmline {
+	border-bottom: 1px solid #ccc;
+}
+.news{
+  background-color: teal;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 20px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.lead{
+  background-color: indigo;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 20px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.co{
+  background-color: maroon;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 20px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.update-date {
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-left: 10px;
+}
