@@ -570,13 +570,16 @@ figcaption{
 
 .movie-pair {
   width: 100%;
+  max-width: none;
   margin: 0 auto 30px;
 	/*margin: 10px 20px 25px;*/
 }
 
 .movie-pair-row {
   display: flex;
+  width: 80%;
   gap: 20px;
+  margin: 0 auto;
   justify-content: center;
 	/*display: flex;
 	justify-content: flex-start;
@@ -587,7 +590,6 @@ figcaption{
 
 .movie-pair-row video {
   display: block;
-  width: 100%;
   min-width: 0;
   height: auto;
 	/*width: 345px;
@@ -599,10 +601,6 @@ figcaption{
 /* -----------------------------------
    Horizontal: 2つ横並び
    ----------------------------------- */
-.movie-pair.horizontal {
-  max-width: 1400px;
-}
-
 .movie-pair.horizontal .movie-pair-row {
   flex-direction: row;
 }
@@ -614,22 +612,13 @@ figcaption{
 /* -----------------------------------
    Vertical: 2つ縦並び
    ----------------------------------- */
-.movie-pair.vertical {
-  width: 100%;
-  margin: 0 auto 30px;
-}
-
 .movie-pair.vertical .movie-pair-row {
   flex-direction: column;
   align-items: center;
 }
 
 .movie-pair.vertical video {
-  display: block;
-  width: 80%;
-  max-width: none;
-  height: auto;
-  margin: 0 auto;
+  width: 100%;
 }
 
 /*--------------------------------------*/
@@ -646,18 +635,19 @@ figcaption{
 	font-style: italic;
 }
 
-/* -----------------------------------
-   Responsive layout
-   ----------------------------------- */
+/* スマートフォン用 */
 @media (max-width: 768px) {
-    .movie-pair.horizontal .movie-pair-row {
-        flex-direction: column;
-        align-items: center;
-    }
+  .movie-pair-row {
+      width: 100%;
+  }
 
-    .movie-pair.horizontal video {
-        width: 100%;
-    }
+  .movie-pair.horizontal .movie-pair-row {
+      flex-direction: column;
+  }
+
+  .movie-pair.horizontal video {
+      width: 100%;
+  }
 }
 
 /*--------------------------------------*/
