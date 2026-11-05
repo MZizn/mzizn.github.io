@@ -615,7 +615,8 @@ figcaption{
    Vertical: 2つ縦並び
    ----------------------------------- */
 .movie-pair.vertical {
-  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 30px;
 }
 
 .movie-pair.vertical .movie-pair-row {
@@ -624,7 +625,11 @@ figcaption{
 }
 
 .movie-pair.vertical video {
-  width: 100%;
+  display: block;
+  width: 80%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
 }
 
 /*--------------------------------------*/
