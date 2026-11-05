@@ -559,33 +559,75 @@ video{
 }
 
 figcaption{
-    /* キャプションのスタイル設定 */
-    background-color: #f2f2f2; /* 背景色 */
-    padding: 10px; /* 余白 */
-    font-style: italic; /* 斜体 */
-    color: #333; /* 文字色 */
-    border: 1px solid #ddd; /* ボーダー */
-    border-top: none; /* 上のボーダーは動画と繋がるように削除 */
+  /* キャプションのスタイル設定 */
+  background-color: #f2f2f2; /* 背景色 */
+  padding: 10px; /* 余白 */
+  font-style: italic; /* 斜体 */
+  color: #333; /* 文字色 */
+  border: 1px solid #ddd; /* ボーダー */
+  border-top: none; /* 上のボーダーは動画と繋がるように削除 */
 }
 
 .movie-pair {
-	margin: 10px 20px 25px;
+  width: 100%;
+  margin: 0 auto 30px;
+	/*margin: 10px 20px 25px;*/
 }
 
 .movie-pair-row {
-	display: flex;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+	/*display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 20px;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 }
 
 .movie-pair-row video {
-	width: 345px;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+	/*width: 345px;
 	height: auto;
 	display: block;
-	margin: 0;
+	margin: 0;*/
 }
+
+/* -----------------------------------
+   Horizontal: 2つ横並び
+   ----------------------------------- */
+.movie-pair.horizontal {
+  max-width: 1400px;
+}
+
+.movie-pair.horizontal .movie-pair-row {
+  flex-direction: row;
+}
+
+.movie-pair.horizontal video {
+  width: calc((100% - 20px) / 2);
+}
+
+/* -----------------------------------
+   Vertical: 2つ縦並び
+   ----------------------------------- */
+.movie-pair.vertical {
+  max-width: 900px;
+}
+
+.movie-pair.vertical .movie-pair-row {
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-pair.vertical video {
+  width: 100%;
+}
+
+/*--------------------------------------*/
 
 .movie-pair figcaption {
 	margin-top: 0;
@@ -598,6 +640,22 @@ figcaption{
 	border-top: none;
 	font-style: italic;
 }
+
+/* -----------------------------------
+   Responsive layout
+   ----------------------------------- */
+@media (max-width: 768px) {
+    .movie-pair.horizontal .movie-pair-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-pair.horizontal video {
+        width: 100%;
+    }
+}
+
+/*--------------------------------------*/
 
 .chart-scroll {
   width: 100%;
