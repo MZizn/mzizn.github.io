@@ -603,6 +603,8 @@ figcaption{
    ----------------------------------- */
 .movie-pair.horizontal .movie-pair-row {
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .movie-pair.horizontal video {
