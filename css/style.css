@@ -609,6 +609,7 @@ figcaption{
 
 .movie-pair.horizontal video {
   width: calc((100% - 20px) / 2);
+  flex-shrink: 0;
 }
 
 /* -----------------------------------
