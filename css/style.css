@@ -810,14 +810,16 @@ figcaption{
 	margin-top: 5pt;
 	margin-left: 2pt;
 	font-size: 11pt;
-	width: 720px;
+	width: auto;
 	color: black;
+	overflow-wrap: anywhere;
 }
 
 .pinfo {
 	margin-left: 10pt;
 	font-size: 9pt;
-	width: 720px;
+	width: auto;
+	overflow-wrap: anywhere;
 }
 
 .col-1 {
